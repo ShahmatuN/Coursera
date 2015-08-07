@@ -30,7 +30,9 @@ pollutantmean <- function(directory, pollutant = "sulfate", id = 1:332)
   result <- mean(meanVector)
   return(round(result, 3)) 
 }
-
-pollutantmean("specdata", "sulfate", 1:10) 
+#tests
+pollutantmean("specdata", "sulfate", 1:10)
+pollutantmean("specdata", "nitrate", 70:72)
+pollutantmean("specdata", "nitrate", 23)
 
 
