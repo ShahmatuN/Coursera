@@ -25,7 +25,7 @@ complete <- function(directory, id = 1:332) {
   {
     currentFile <- read.csv(filePaths[i], header=T, sep=",")
     
-    fullData[k] <- sum(complete.cases(currentFile))
+    fullData[k] <- nrow(na.omit(currentFile))
     k <-k+1
   }
 nobs <- data.frame(id = id, nobs = fullData)
@@ -36,3 +36,4 @@ complete("specdata", 1)
 complete("specdata", c(2, 4, 8, 10, 12))
 complete("specdata", 30:25)
 complete("specdata", 123)
+complete("specdata", 1:2)
