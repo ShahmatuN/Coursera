@@ -1,4 +1,4 @@
-setwd("C:/Users/zhiltsov/Desktop/Coursera/sha-1/Programming Assignment 1")
+setwd("C:/Users/zhiltsov/Desktop/Coursera/sha-1/Assigment 1")
 pollutantmean <- function(directory, pollutant = "sulfate", id = 1:332) 
 {
   ## 'directory' is a character vector of length 1 indicating
